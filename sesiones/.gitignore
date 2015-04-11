@@ -126,5 +126,6 @@ sympy-plots-for-*.tex/
 *.sav
 
 #Custom
+*.txt
 *.tex
 img/
