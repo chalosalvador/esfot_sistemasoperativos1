@@ -1,0 +1,1259 @@
+/* Styles originally defined in default-master.css */
+
+
+TABLE.table-display {
+  font-size: 85%;
+}
+
+TR.table-header {
+  background-color: #cccccc; 
+}
+
+TR.even {
+  background-color: #f0f0f0;
+}
+
+TR.odd {
+  background-color: #e0e0e0;
+}
+
+table.especial {
+	background-color : #CCCCFF;
+	border-spacing : 0.2em;
+	border-style: double;
+	border-bottom: solid;
+	border-width: thick thin;
+	text-align: center;
+	margin: 1em
+}
+
+/* Replace deprecated center tags in forms. Eventually all forms should use form builder and this tag should not be used */
+
+DIV.submit-button {
+  text-align: center;
+}
+
+
+/**********************************************************************
+/* Site-Wide/Master Templates
+/**********************************************************************/
+
+#skiptocontent {
+  display: none;
+}
+
+.block-marker {
+    display: none;
+}
+
+/* User Messages */
+
+#alert-message {
+  border: 1px solid #A40000;
+  background-color: #ccff99; 
+  padding: 0.2em;
+  margin: 0.2em auto;
+  text-align: center;
+  vertical-align: middle; 
+  font-weight: normal;
+}
+
+#alert-message .alert {
+  padding: 0.2em;
+  font-size: 100%;
+  margin: 0.2em auto;
+}
+
+/* Boxed User Message */
+
+.boxed-user-message {
+    padding: 0.2em;
+    font-size: 70%;
+    margin: 2% auto;
+    text-align: center;
+    color: rgb(150,0, 0);
+    background: rgb(255,255,255);
+}
+
+/* FeedBack */
+
+#feedback {
+    background: rgb(250,250,250);
+    float: right;
+    margin: 0.2em;
+    
+}
+
+#feedback a {
+    border: 2px solid rgb(1,103,143);
+    text-decoration: none;
+    color: rgb(0,0,0);
+    padding: 1em;
+
+}
+
+#feedback a:hover {
+    background: rgb(225,225,225);
+    
+}
+
+
+/* Subsite Name */
+
+#subsite-name { 
+  font-weight: bold; 
+  font-size: 120%;
+  padding-left: 8px;
+}
+a.subsite-name {
+  color: black;
+  text-decoration: none;
+}
+a.subsite-name:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* Site Footer */
+
+#footer {
+  clear: both;
+  border-top: 2px solid #016799;
+  margin-top: 0.1em;
+  padding: 0.2em;
+  text-align: center;
+}
+
+#footer ul {
+  display: inline;
+  margin-left: 0;
+  padding-left: 0;
+  border: none;
+}
+
+#footer ul li {
+  margin-left: 0;
+  padding-left: 10px;
+  border: none;
+  list-style: none;
+  display: inline;
+}
+
+#footer .action-list {
+  float: left;
+}
+
+
+
+/**********************************************************************
+/* General navigation
+/**********************************************************************/
+
+/* First level tabs */
+
+#navbar-div {
+  border-bottom: 1px solid #666;
+}
+#navbar-container {
+  height: 35px;
+  position: relative;
+}
+#navbar { 
+  position: absolute;
+  height: 21px;
+  margin: 0px;
+  padding: 0px 0px 0px 0px;
+  left: 10px;
+  bottom: -2px;
+  margin-top: 10px;
+  font-size: 80%;
+  font-weight: bold;
+}
+html>body #navbar { bottom: 0px }
+
+#navbar .tab { 
+  height: 16px;
+  float: left; 
+  background-color: #eeeeee; 
+  border: 1px solid #666;
+  padding: 2px 5px 2px 5px;
+  margin: 0px 2px 0px 2px;
+}
+#navbar a {
+  text-decoration: none;
+  color: black;
+}
+#navbar a:hover {
+  text-decoration: underline;
+}
+#navbar #navbar-here { 
+  border-bottom-color: white;
+  background-color: white;
+}
+#navbar #navbar-here a {
+  color: black;
+}
+
+#navbar-body { 
+  border-bottom: 1px solid #016799;
+  background-color: white;
+  clear: both;
+  padding-top: 4px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+}
+
+
+/* Second level tabs */
+
+#subnavbar-div {
+  border-bottom: 1px solid #666;
+}
+#subnavbar-container {
+  height: 35px;
+  width: 742px;
+  position: relative;
+}
+#subnavbar {
+  position: absolute;
+  width: 720px;
+  height: 21px;
+  margin: 0px;
+  padding: 0px 0px 0px 0px;
+  right: 0px;
+  bottom: -2px;
+  margin-top: 10px;
+  font-size: 80%;
+  font-weight: bold;
+}
+html>body #subnavbar { bottom: 0px }
+
+#subnavbar .tab { 
+  height: 16px;
+  float: left; 
+  background-color: #eeeeee; 
+  border: 1px solid #666;
+  padding: 2px 5px 2px 5px;
+  margin: 0px 2px 0px 2px;
+}
+#subnavbar a {
+  text-decoration: none;
+  color: black;
+}
+#subnavbar a:hover {
+  text-decoration: underline;
+}
+#subnavbar #subnavbar-here { 
+  border-bottom-color: white;
+  background-color: white;
+}
+#subnavbar #subnavbar-here a {
+  color: black;
+}
+
+#subnavbar-body { 
+  border-bottom: 1px solid #016799;
+  border-left: 1px solid #016799;
+  border-right: 1px solid #016799;
+  background-color: white;
+  clear: both;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+/* END NAVIGATION */
+
+
+/**********************************************************************
+/* Widgets
+/**********************************************************************/
+
+/* STANDARD TAGS -----------------------------------------------------------*/
+/* standard html (body, h1, p, form...) */
+
+body {
+  margin: 5px 5px 0px 5px;
+  font-family : Verdana, Helvetica, Geneva, sans-serif;
+}
+
+h1, h2, h3, h4 { 
+    border-bottom: 0.1em solid #2e3436;
+}
+
+h1#titulo {
+    font-size: 1.2em;
+    text-align: center;
+    border-bottom: 1px solid rgb(0,0,0);
+}
+
+h2 {
+  font-size: 1.1em;
+  margin-bottom: 12px;
+}
+
+h3 {
+  font-size: 1.00em;
+  margin-bottom: 12px;
+}
+
+/* Estilos de Enlaces A y Botones */
+
+
+/* Great Article: http://www.usabilitypost.com/2012/01/10/pressed-button-state-with-css3/ ---- */
+a.button { 
+  border: solid 1px black;
+  background-color: #E1E1E1;
+  text-align: center; 
+  padding: 0.2em 0.4em;
+  color: black;
+  text-decoration: none;
+  transition-duration: 0.2s;
+   user-select:none;
+}
+
+a.button:link { 
+  text-decoration: none;
+  border: solid 1px black;
+}
+
+a.button:hover,a.button:focus { 
+  text-decoration: none;
+  background-color: #CCCCCC;
+  border: solid 1px black;
+}
+
+a.button:active { 
+  text-decoration: none;
+  border: solid 1px black;
+}
+
+/* END BUTTON ---- */
+
+#botones {text-align: center;}
+
+.center {text-align: center;}
+.small {font-size: x-small;}
+
+/* END STANDARD TAGS ---------------------------------------------------------------*/
+
+/* HEADER TAGS ---------------------------------------------------------------------*/
+
+#header {
+  font-size: 0.90em;
+  background-color: rgb(230,230,230);
+  padding: 0.5em; 
+  border-bottom: 2px solid #016799;
+
+}
+
+#system-name {
+  font-size: 1.0em;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 0.2em;
+}
+
+#system-name a {
+  text-decoration: none;
+}
+
+#header-navigation {
+  float: right;
+  padding-right: 0.4em;
+
+}
+
+/* CONTEXT BAR ---- */
+
+#breadcrumbs {
+  clear: right;
+  padding-left: 0.4em;
+}
+
+/* END CONTEXT BAR ---- */ 
+
+/* END HEADER TAGS -----------------------------------------------------------*/
+
+/* LISTS -----------------------------------------------------------*/
+
+ul.compact, .action-list ul{
+  margin: 0px;
+  padding: 0px;
+}
+ul.compact li, .action-list ul li {
+  list-style:none;
+  display: inline;
+}
+
+ul.options {
+    display: inline;
+    margin: 1em auto;
+}
+
+ul.options li {
+    display: inline;
+    list-style-type: inherit;
+    margin: 0.2em;
+    padding: 0.4em;
+}
+
+ul.options li:hover {
+  background-color: #deedf7;
+  font-weight: bold;
+  color: rgb(255,255,255);
+  border-bottom: 1px solid rgb(20,20,20);
+}
+
+ul.options li a {
+    text-decoration: none;
+}
+
+ul.options li.selected {
+    color: black;
+    font-size: 150%;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+ul.simple {
+ display: inline; 
+}
+
+ul.simple li{
+ display: inline;
+ list-style: none;
+ padding: 0.1em;
+ margin: 0.2em;
+}
+
+ul.simple li a {
+    text-decoration: none;
+}
+ul.simple li:hover {
+    background: rgb(240,240,240);
+}
+
+/* END OF LISTS */
+
+
+/* Portlets */
+
+.portlet-sidebar {
+  width: 30%;
+}
+
+.portlet {
+  margin: 4px 4px 4px 4px;
+}
+
+.portlet .portlet-title {
+  background: #dddddd; 
+  padding: 2px 8px 2px 8px; 
+  margin: 0;
+}
+
+.portlet .portlet-body {
+  border: 1px dotted #999; 
+  border-top: 0px; 
+  padding: 6px 8px 6px 8px;
+}
+
+
+/* Generally Available Tabs */
+
+#tabs-div {
+  border-bottom: 1px solid #666;
+}
+#tabs-container {
+  height: 15px;
+  position: relative;
+}
+#tabs { 
+  position: absolute;
+  height: 21px;
+  margin: 0px;
+  padding: 0px 0px 0px 0px;
+  left: 10px;
+  bottom: -2px;
+  margin-top: 10px;
+  font-size: 80%;
+  font-weight: bold;
+}
+html>body #tabs { bottom: 0px }
+
+#tabs .tab { 
+  height: 16px;
+  float: left; 
+  background-color: #cccccc;
+  border: 1px solid #666;
+  padding: 2px 5px 2px 5px;
+  margin: 0px 2px 0px 2px;
+}
+#tabs .disabled { 
+  color: #999999;
+}
+#tabs a {
+  text-decoration: none;
+  color: black;
+}
+#tabs a:hover {
+  text-decoration: underline;
+}
+#tabs #tabs-here { 
+  border-bottom-color: #f6f6f6;
+  background-color: #f6f6f6;
+}
+#tabs #tabs-here a {
+  color: black;
+}
+
+#tabs-body { 
+  border-bottom: 1px solid #016799;
+  background-color: #f6f6f6;
+  clear: both;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#tab_index { 
+    line-height: 2em;
+    text-align: center; 
+    font-size: 150%;
+    margin: 1.2em; 
+    border-bottom: 2px solid rgb(1,103,143);
+ }
+
+#tab_index ul {
+    margin: auto;
+ }
+
+#tab_index ul li { 
+    display: inline;
+    text-align: center;
+ }
+
+#tab_index ul li a { 
+    font-weight: normal;
+    text-decoration: none;
+    padding: 1em;
+    color:rgb(0,0,0);
+ }
+ 
+#tab_index ul li a:hover { 
+    background-color: rgb(250,250,255);
+    border: 2px solid rgb(1,103,143);
+}
+
+/**********************************************************************
+/* acs-developer-support Toolbar
+/**********************************************************************/
+/* LARS: This ought to go in the developer-support package, somehow */
+
+#developer-toolbar {
+  background-color: #616093;
+  color: white;
+  font-size: 80%;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+#developer-toolbar td a { 
+  border: solid 1px #616093;
+  text-align: center; 
+  color: white;
+  text-decoration: none;
+}
+#developer-toolbar td a:hover { 
+  text-decoration: none;
+  background-color: #999999;
+  border: solid 1px #cccccc;
+}
+#developer-toolbar #search {
+  font: 80% tahoma;
+  color: white;
+}
+#developer-toolbar #search input {
+  font: 100% tahoma;
+}
+#developer-toolbar td a.on {
+  background-color: #888888;
+  border: solid 1px #cccccc;
+}
+#developer-toolbar td a:hover.on {
+  background-color: #666666;
+  border: solid 1px #999999;
+}
+
+/* Developer-support footer */
+
+.developer-support-footer {
+  float: left;
+  padding: 6px;
+  border: solid 1px gray;
+  background-color: #e1e1e1;
+  margin-top: 4px;
+}
+
+
+/* Menús y Tablas de Navegación*/
+
+/* Menú con opciones en Formato Vertical */
+
+#menu_vertical {
+                 width: 15%;
+                 background-color: #FFF;
+                 font-size: 0.8em
+}
+
+#menu_vertical ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    border: solid thin;
+}
+
+#menu_vertical a {
+                   color: #000;
+                   background-color: #efefef;
+                   text-decoration: none;
+                   }
+
+#menu_vertical a:hover {
+                color: #a00;
+                background-color: #eee;
+}
+
+
+#menu_vertical ul  ul {
+                 position: absolute;
+                 top: 0;
+                 left: 0;
+                 }
+
+#menu_vertical li {
+    position: relative;
+}
+
+#menu_vertical ul  ul {
+                 position: absolute;
+                 top: 0%;
+                 left: 100%;
+                 width: 150%;
+}
+
+div#menu_vertical  ul ul, div#menu_vertical ul ul li:hover ul ul {
+    display: none;
+}
+
+div#menu_vertical  ul li:hover ul {
+    display: block;
+}
+
+
+/* Menú con opciones en Formato Horizontal */
+
+#menu_horizontal { 
+    font-size: 110%;
+    width: 100%;
+    text-align: left;
+}
+
+#menu_horizontal ul {
+    position: relative;
+    padding: 0.1em;
+}
+
+#menu_horizontal ul li { 
+    display: inline;
+    text-align: center;
+    padding: 1.0em;
+}
+
+#menu_horizontal ul li:hover{
+    font-weight: bold;
+}
+
+#menu_horizontal ul li a { 
+    font-weight: normal;
+    text-decoration: none;
+    color: rgb(0,0,0);
+}
+
+#menu_horizontal ul li ol {
+    display: none;
+    background-color: rgb(255,255,255);
+    border: 2px solid rgb(1, 103, 143);
+    position: absolute;
+    width: 90%;
+    margin: auto;
+}
+
+#menu_horizontal ul li:hover ol  { 
+    display: block;
+}
+
+#menu_horizontal ul li:hover a{ 
+    font-weight: bold;
+    color: rgb(0,0,0);
+}
+
+#menu_horizontal ul li:hover ol a{
+    border: none;
+    font-weight: normal;
+}
+
+#menu_horizontal ul li ol li {
+    padding: 0.1em;
+    margin: 0.1em;
+    text-align: left;
+    display: block;
+}
+
+#menu_horizontal ul li ol li a:hover{
+    font-weight: bold;
+    color: rgb(10,10,10);
+}
+
+/* Menú para Artículo Más Leído y Menú base de listas sobre listas*/
+ul.menu {
+    list-style: none;
+    text-align: center;
+    margin-left: -2em;
+}
+ul.menu > li {
+    display: block;
+    line-height: 2em;
+    font-size: 70%;
+    text-align: left;
+ }
+ 
+ul.menu li a {
+    padding: 0.3em;
+ }
+
+ul.menu li a:hover {
+    text-decoration: none;
+    background-color: rgb(240,240,240);
+ }
+ul.menu ol {
+    list-style: none;
+    background-color: rgb(255,255,255);
+    border: 2px solid rgb(1, 103, 143);
+    padding: 0.3em;
+ }    
+
+/* Barra Admin */
+#barra_admin {
+    text-align: right;
+    font-size: 95%;
+    margin-bottom: 0.2em;
+    border-bottom: 1px solid rgb(200, 200, 200);
+
+}
+
+#barra_admin ul li {
+    display: inline;
+    line-height: 2.5em;
+    margin-left: 0.1em;
+    text-align: center;
+}
+
+#barra_admin a {
+    background-color: #f1f1f1;
+    text-align: center; 
+    padding: 0.7em;
+    border: 1px solid #bbb;
+    color: black;
+    text-decoration: none;
+
+}
+
+#barra_admin a:hover {
+    border-bottom: 4px solid #bbb;
+}
+
+/* Botón Admin */
+
+a.admin { 
+  border-bottom: 2px solid #ff0000;
+  color: black;
+  padding: 0.3em;
+  background-color: #e1e1e1;
+  text-align: center; 
+  padding: 0.2em;
+  text-decoration: none;
+}
+
+a.admin:link, a.admin:visited {
+  color: #f00;
+  font-size: 120%;
+  font-weight: normal;
+}
+
+a.admin:hover { 
+  color: #fff; 
+  background: #f00;
+}
+
+/* Clases Generales de Contenidos */
+
+.contenidos {
+    background-color: rgb(250, 250, 250);
+    padding: 1.5em; 
+    margin: 0.5em;
+    border-width:2px;
+    border-color: rgb(1, 103, 143);
+    box-shadow: 0px 0px 2px #000000;
+}
+
+.resumen {
+    background-color : rgb(250,250,255);
+    padding: 1em; 
+    border: 1px solid #016799;
+    margin: 1em auto;
+    vertical-align: middle;
+    width: 80%;
+    line-height: 2em;
+}
+
+/* Divs Enviar / Compartir / Comunidad */
+#div_enviar {
+    background-color: rgb(250,250,250);
+    clear: both;
+}
+
+#div_enviar ul {
+    margin: 0.5em auto;
+    text-align: center;
+}
+
+#div_enviar ul li {
+    display: inline;
+    margin-right: 0.2em;
+    font-size: 80%;
+}
+
+
+#div_comentario {
+    margin: 1em auto; 
+    padding: 2em; 
+    width: 75%; 
+    font-size: 120%;
+    border: 3px solid rgb(1,103,143);
+}
+
+#div_comentario .encabezado {
+    margin-left: -0.2em; 
+    margin-bottom: 0.3em;
+    font-weight: bold;
+}
+
+#div_comentario .campo_texto {
+    text-align: left;
+    margin: 1em; 
+}
+
+#div_comentario #img_control {
+    font-size: 70%; 
+}
+
+#div_comentario  input[type=text] {
+    color: rgb(175,175,175);
+    padding: 0.2em;
+    font-size: 2em;
+    border: 2px solid rgb(0,0,0);
+}
+
+#div_comentario  input[type=text]:focus {
+    border: 6px solid rgb(143,143,143);
+}
+
+#div_comentario textarea {
+    width: 100%;
+    height: 8em;
+    border: 3px solid rgb(1,103,143);
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+#comments {
+    margin-top: 3em;
+    padding-top: 1em;
+    border-top: 2px dashed rgb(1,103,143);
+
+
+}
+
+
+/* Divs Imágenes e Iconos */
+/* Iconos en 48x48 */
+.icon {
+    vertical-align: middle; 
+    margin: auto 0.4em;
+    border: none;
+    height: 48px;
+    width: 48px;
+}
+
+#foto_portada {
+    text-align: center;
+    margin: 1em auto;
+}
+
+#foto_portada img {
+    border: 2px solid rgb(0,0,0);
+}
+
+#foto_portada img:hover {
+    border: 4px solid rgb(0,0,0);
+}
+
+
+/* Buscador */
+
+#buscador {
+    background-color: rgb(255,255,255);
+    margin: 0.2em;
+    width: auto;
+    text-align: center;
+}
+
+#buscador input[type=text] {
+    color: rgb(200, 200, 200);
+    text-align: left;
+ }
+ 
+#buscador #q {
+    color: rgb(100,100,100);
+    font-size: 120%;
+    padding: 0.5em;
+    border: 1px solid rgb(70,155,255);
+    width: 50%;
+}
+
+#buscador #q:focus {
+    border: 3px solid rgb(1,103,143);
+}
+
+#buscador #buscar {
+ border: 1px solid rgb(200,200,200);
+ font-weight: bold;
+}
+
+/* Buscador AutoSelect (jquery plugin)*/
+
+#buscador_as {
+    margin: auto;
+    background-color: rgb(245,245,245);
+}
+ 
+#buscador_as #q {
+    color: rgb(100,100,100);
+    border: 2px solid rgb(1,103,143);
+    font-size: 120%;
+    padding: 0.5em;
+    width: 80%;
+}
+
+#buscador_as #q:focus {
+    border: 4px solid rgb(1,103,143);
+}
+
+
+/* Divs Par / Impar */
+.odd {
+    background-color: rgb(240,240,240);
+    border: 1px solid rgb(1,103,143);
+    margin: 0.3em;
+    padding: 0.7em;
+}
+
+.even {
+    background-color: rgb(250,250,250);
+    border: 1px solid rgb(1,103,143);
+    margin: 0.3em;
+    padding: 0.7em;
+}
+
+/* Resaltando Números */
+span.aviso_numero {
+    margin-left: -1.5em;
+    font-size: 70%;
+    vertical-align: super;
+    padding: 0.25em;
+    background: rgb(220,10,10);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 2em;
+}
+
+.numero {
+    font-size: 100%;
+    margin: 0.3em;
+    color: #800000;
+}
+
+/* Campos Formularios en Todo el Sitio */
+
+input[type=text] {
+    font-size: 120%;
+}
+
+input[type=checkbox] {
+    font-size: 200%;
+}
+
+input[type=submit] {
+    border: 2px solid rgb(0,0,0);
+    padding: 0.5em;
+    margin: 0.1em;
+    color: rgb(10,10,10);
+    background-color: rgb(250,250,250);
+    font-size: 105%;
+}
+
+input[type=submit]:hover {
+    color: rgb(10,10,10);
+    cursor: pointer;
+    background-color: rgb(220,220,220);
+}
+
+textarea {
+    width: 80%;
+    height: 4em;
+    border: 2px solid rgb(1,103,143);
+    padding: 0.2em;
+    font-size: 1.2em;
+}
+
+/*photo-album CSS */
+
+
+#main_table {
+  background-color: red;
+  padding: 0.2em;
+}
+
+#picture_main {
+ width: 95%;
+ text-align: center;
+ padding: 0.2em;
+ margin: 0.2em auto;
+ overflow: hidden;
+}
+
+#picture_image_title {
+  font-size: 110%;
+  margin-bottom: 0.2em;
+}
+
+#picture_image_photo {
+    width: 100%;
+    padding: 0.2em;
+    overflow: scroll;
+}
+
+#picture_image_photo img {
+    border: 3px solid rgb(0,0,0);
+}
+
+#picture_mini_admin {
+ text-align: center;
+ margin: 1em auto;
+ font-size: 120%;
+}
+
+#picture_admin {
+ width: 75%;
+ border: 2px solid #313063;
+ margin: auto;
+}
+
+#album_admin {
+ width: 100%;
+ border-top: 2px solid #313063;
+ margin: auto;
+ text-align: center;
+ padding: 1em;
+}
+
+.folder_description {
+    background-color: rgb(255,255,255);
+    padding: 0.5em;
+    font-size: 105%;
+    margin: 0.5em auto;
+    width: 85%;
+}
+
+
+.picture_text_explanation {
+    background-color: #FFFFFF;
+    padding: 0.2em;
+    font-size: 80%;
+    margin: auto;
+    width: 85%;
+}
+
+.picture_text_explanation ul {
+    list-style: none;
+    display: inline;
+    text-align: left;
+}
+
+.picture_navbar {
+  margin: auto;
+  width: 95%;
+  padding: 0.4em 1.5em 1.2em 1.5em;
+}
+
+.photo_album_nav {
+        border: none;
+       line-height: 48px;
+       margin: auto;
+       width: 95%;
+       background-color: rgb(250,250,250);
+       text-align: center;
+}
+
+.photo_album_nav a {
+    background-color: #FFFFFF;
+    font-size: 100%;
+    padding: 0.2em; 
+    text-decoration: none;
+}
+
+.photo_album_nav a:hover {
+    font-weight: bold;
+    border: 1px solid rgb(0,0,0);
+}
+
+.photo_album_nav .prev_next_links {
+    margin-left: 6em;
+}
+
+.photo_album_nav .prev_next_links a {
+    border: none;
+    background-color: none;
+}
+
+.photo_album_nav .this_photo {
+    font-size: 200%; 
+    font-weight: bold;
+    margin: 0.2em;
+}
+
+#picture_original {
+    overflow: hidden;
+    width: 100%;
+}
+
+#picture_original_title {
+    width: 90%;
+     position: fixed;
+     left: 1%;
+     bottom: 1%;
+     background-color: rgb(255,255,255);
+}
+
+#picture_original_title ul {
+    list-style: none;
+}
+
+#picture_original_image {
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    border: 4px solid rgb(0,0,0);
+    background-color: rgb(255,255,255);
+}
+
+/* Imagen Lado Derecho para Contenidos*/
+.etp_image {
+    margin: 0.2em;
+    float: right;
+    width: 30%;
+    height: 30%;
+}
+.etp_image img {
+    padding: 0.3em;
+    background: rgb(0,0,0);
+    border: 1px solid rgb(255,255,255);
+    width: 99%;
+    margin: 0px auto;   
+}
+
+/* Imagen Central para Páginas Índice*/
+.etp_image_index {
+    margin: 0.2em auto;
+    text-align: center;
+    height: 50%;
+}
+
+.etp_image_index img {
+    padding: 0.3em;
+    background: rgb(0,0,0);
+    border: 1px solid rgb(255,255,255);
+    width: 75%;
+    margin: 0px auto;   
+}
+
+/* Barra para Procesos (por ejemplo en el pago)*/
+#proceso {
+    margin: 2px auto;
+    width: 100%;
+    text-align: center; 
+
+}
+
+#proceso ol li {
+    display: inline;
+    margin-left: 1.5em;
+    text-align: center;
+    color: rgb(150,150,150);
+}
+
+#proceso ol li#aqui {
+    color: rgb(5,5,5);
+    font-weight: bold;
+    font-size: 125%;
+    border-bottom: 1px solid rgb(5,5,5);
+}
+
+/* Estilos para Páginas Cursos */
+
+#lista_clases { 
+    margin: 2em; 
+}
+ #lista_clases li {
+     line-height: 1.5em;
+     font-weight: bold;
+ }
+ #lista_clases li span { 
+     font-size: 85%;
+     font-weight: normal; 
+ } 
+ .boton_aviso {
+     font-size: 150%;
+     text-align: center; 
+ } 
+ .boton_aviso input {
+     font-size: 130%;
+     border: 2px solid rgb(1,103,143);
+ }
+ #mensaje_curso { 
+     border: 1px solid rgb(200,200,200);
+     background-color: rgb(230,230,230);
+     padding: 0.3em;
+     margin: 0.2em auto;
+     text-align: center;
+     vertical-align: middle;
+     font-weight: normal;
+ }

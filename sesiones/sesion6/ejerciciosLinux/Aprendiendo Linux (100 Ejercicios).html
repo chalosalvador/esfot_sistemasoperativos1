@@ -1,0 +1,826 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0052)#100 -->
+<html lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Aprendiendo Linux (100 Ejercicios)</title>
+
+
+<meta name="generator" lang="en" content="Usando OpenACS v.5.8.1d4">
+<link rel="icon" href="https://www.cesareox.com/resources/acs-subsite/icons/favicon.png" type="image/png">
+<link rel="stylesheet" href="./Aprendiendo Linux (100 Ejercicios)_files/jquery-ui.css" type="text/css" media="all">
+<link rel="stylesheet" href="./Aprendiendo Linux (100 Ejercicios)_files/forms.css" type="text/css" media="all">
+<link rel="stylesheet" href="./Aprendiendo Linux (100 Ejercicios)_files/lists.css" type="text/css" media="all">
+<link rel="apple-touch-icon" href="https://www.cesareox.com/resources/acs-subsite/icons/apple-touch-icon.png">
+<link rel="stylesheet" href="./Aprendiendo Linux (100 Ejercicios)_files/site-master.css" type="text/css" media="all">
+<script async="" src="./Aprendiendo Linux (100 Ejercicios)_files/prum.min.js"></script>
+<script type="text/javascript" async="" src="./Aprendiendo Linux (100 Ejercicios)_files/ga.js"></script>
+<script type="text/javascript" src="./Aprendiendo Linux (100 Ejercicios)_files/core_cesareox.js" defer="defer"></script>
+
+<script type="text/javascript" src="./Aprendiendo Linux (100 Ejercicios)_files/jquery.min.js"></script>
+
+<script type="text/javascript" src="./Aprendiendo Linux (100 Ejercicios)_files/jquery-ui.min.js"></script>
+
+</head>
+<body>
+
+
+
+  <div id="wrapper">
+
+    <div id="content-wrapper">
+      <div class="block-marker">Comienza Contenido</div>
+      <div id="inner-wrapper">
+
+
+
+        <div id="main">
+          <div id="main-content">
+            <div class="main-content-padding">
+
+
+              <h1>Aprendiendo Linux (100 Ejercicios)</h1>
+
+              <div class="resumen">
+                <p>Esto son<strong> 100 ejercicios básicos</strong> para aprender a manejar una consola Unix. al terminar estos ejercicios deben pasar a resolver el documento <a href="100%20Ejercicios%20Linux.pdf">PDF</a>. Lo ideal es que traten de resolver la pregunta, sin ver la respuesta, esa sería la mejor forma de aprender. Esto les dará una idea de su nivel de usuario básico (al menos 85 bien). Muchas son diferentes y tendrán que investigar para conocer la respuesta.
+                </p>
+              </div>
+
+              <h2 style="margin-top: 2em; text-align: center;">100 Preguntas (y sus Respuestas)</h2>
+
+              <ol>   
+                <li id="1" class="odd">
+                  <p>¿Cómo asignar una IP a mi ordenador?<a href="#1" class="button" style="margin-left: 0.8em;" id="q_1-button" onclick="showHide(&#39;q_1&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+                  <div id="q_1" style="padding-left: 2em; display: none;">
+                   ifconfig [interface] nº de IP
+                 </div>
+               </li>
+
+               <li id="2" class="even">
+                <p>¿Cómo hago para ver los archivos del directorio anterior?<a href="#2" class="button" style="margin-left: 0.8em;" id="q_2-button" onclick="showHide(&#39;q_2&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+                <div id="q_2" style="padding-left: 2em; display: none;">
+                 ls ../
+               </div>
+             </li>
+
+             <li id="3" class="odd">
+              <p>¿Cómo sé en qué directorio  estoy?<a href="#3" class="button" style="margin-left: 0.8em;" id="q_3-button" onclick="showHide(&#39;q_3&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+              <div id="q_3" style="padding-left: 2em; display: none;">
+               pwd
+             </div>
+           </li>
+
+           <li id="4" class="even">
+            <p>¿Como veo los archivos en un directorio?<a href="#4" class="button" style="margin-left: 0.8em;" id="q_4-button" onclick="showHide(&#39;q_4&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+            <div id="q_4" style="padding-left: 2em; display: none;">
+             ls
+           </div>
+         </li>
+
+         <li id="5" class="odd">
+          <p>¿Cómo puedo crear archivos en Unix?<a href="#5" class="button" style="margin-left: 0.8em;" id="q_5-button" onclick="showHide(&#39;q_5&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+          <div id="q_5" style="padding-left: 2em; display: none;">
+           Con el comando "touch" seguido del nombre de archivo que quiero crear.
+         </div>
+       </li>
+
+       <li id="6" class="even">
+        <p>¿Cómo puedo iniciar y cerrar sesión con mi nombre de usuario?<a href="#6" class="button" style="margin-left: 0.8em;" id="q_6-button" onclick="showHide(&#39;q_6&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+        <div id="q_6" style="padding-left: 2em; display: none;">
+         Introduzco mi nombre de usuario (login:) y mi clave (password:)
+         Utilizo exit para salir de una consola
+       </div>
+     </li>
+     
+     <li id="7" class="odd">
+      <p>¿Cómo puedo crear uno o varios directorios?<a href="#7" class="button" style="margin-left: 0.8em;" id="q_7-button" onclick="showHide(&#39;q_7&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+      <div id="q_7" style="padding-left: 2em; display: none;">
+       Con el comando mkdir seguido del nombre o nombres, separados por espacio, de los directorios que quiero crear. 
+     </div>
+   </li>
+
+   <li id="8" class="even">
+    <p>¿En que directorios se guardan generalmente los programas?<a href="#8" class="button" style="margin-left: 0.8em;" id="q_8-button" onclick="showHide(&#39;q_8&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+    <div id="q_8" style="padding-left: 2em; display: none;">
+     Generalmente en /bin /sbin y /usr/sbin, aunque depende también de la distribución.
+   </div>
+ </li>
+
+ <li id="9" class="odd">
+  <p>¿Con denomina Unix a los disco duros IDE?<a href="#9" class="button" style="margin-left: 0.8em;" id="q_9-button" onclick="showHide(&#39;q_9&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_9" style="padding-left: 2em; display: none;">
+   Los denomina como hd (de Hard Disk).
+   Canal Primario: hda (Maestro) y hdb (Esclavo)
+   Canal Secundario: hdc (Maestro) y hdd (Secundario)
+ </div>
+</li>
+
+<li id="10" class="even">
+  <p>¿Cómo puedo obtener un listado de los procesos que tengo en ejecución?<a href="#10" class="button" style="margin-left: 0.8em;" id="q_10-button" onclick="showHide(&#39;q_10&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_10" style="padding-left: 2em; display: none;">
+   Con el comando ps y varias opciones (por ejemplo -axf). También, de forma interactiva con el comando top.
+ </div>
+</li>
+
+<li id="11" class="odd">
+  <p>¿De qué forma puedo averiguar el uso de memoria que consume mi ordenador?<a href="#11" class="button" style="margin-left: 0.8em;" id="q_11-button" onclick="showHide(&#39;q_11&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_11" style="padding-left: 2em; display: none;">
+   Comando free.
+ </div>
+</li>
+
+<li id="12" class="even">
+  <p>Si hago ls ¿cual es el directorio del que lista los archivos?<a href="#12" class="button" style="margin-left: 0.8em;" id="q_12-button" onclick="showHide(&#39;q_12&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_12" style="padding-left: 2em; display: none;">
+   El directorio actual, es decir <b>./</b>
+ </div>
+</li>
+
+<li id="13" class="odd">
+  <p>¿Cómo se cambia al propietario de un fichero?<a href="#13" class="button" style="margin-left: 0.8em;" id="q_13-button" onclick="showHide(&#39;q_13&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_13" style="padding-left: 2em; display: none;">
+   con el comando chown
+ </div>
+</li>
+
+<li id="14" class="even">
+  <p>¿Cómo puedo saber el orden de ejecución de mis procesos?<a href="#14" class="button" style="margin-left: 0.8em;" id="q_14-button" onclick="showHide(&#39;q_14&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_14" style="padding-left: 2em; display: none;">
+   Mediante el comando ps y observando el nº que aparece al lado del proceso (PID)
+ </div>
+</li>
+
+<li id="15" class="odd">
+  <p>¿Con qué comando se monitorea la memoria?<a href="#15" class="button" style="margin-left: 0.8em;" id="q_15-button" onclick="showHide(&#39;q_15&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_15" style="padding-left: 2em; display: none;">
+   Comando top 
+ </div>
+</li>
+
+<li id="16" class="even">
+  <p>¿Cómo puedo ver el contenido de un archivo sin abrirlo?<a href="#16" class="button" style="margin-left: 0.8em;" id="q_16-button" onclick="showHide(&#39;q_16&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_16" style="padding-left: 2em; display: none;">
+   Utilizando el comando cat
+ </div>
+</li>
+
+<li id="17" class="odd">
+  <p>¿Cuál es el comando para saber donde estás?<a href="#17" class="button" style="margin-left: 0.8em;" id="q_17-button" onclick="showHide(&#39;q_17&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_17" style="padding-left: 2em; display: none;">
+   pwd
+ </div>
+</li>
+
+<li id="18" class="even">
+  <p>¿Cómo se quien soy?<a href="#18" class="button" style="margin-left: 0.8em;" id="q_18-button" onclick="showHide(&#39;q_18&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_18" style="padding-left: 2em; display: none;">
+   Utilizando el comando whoami
+ </div>
+</li>
+
+<li id="19" class="odd">
+  <p>¿Puedo tener más de una consola abierta?<a href="#19" class="button" style="margin-left: 0.8em;" id="q_19-button" onclick="showHide(&#39;q_19&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_19" style="padding-left: 2em; display: none;">
+   Sí. Y se puede alternar entre ellas con el atajo de teclado alt +f1, f2, f3 según a la consola que queramos cambiar
+ </div>
+</li>
+
+<li id="20" class="even">
+  <p>¿Existen físicamente todos los dispositivos que hay en /dev?<a href="#20" class="button" style="margin-left: 0.8em;" id="q_20-button" onclick="showHide(&#39;q_20&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_20" style="padding-left: 2em; display: none;">
+   No
+ </div>
+</li>
+
+<li id="21" class="odd">
+  <p>¿Qué comando reinicia el equipo?<a href="#21" class="button" style="margin-left: 0.8em;" id="q_21-button" onclick="showHide(&#39;q_21&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_21" style="padding-left: 2em; display: none;">
+   reboot
+ </div>
+</li>
+
+<li id="22" class="even">
+  <p>¿Comando para apagar mi ordenador?<a href="#22" class="button" style="margin-left: 0.8em;" id="q_22-button" onclick="showHide(&#39;q_22&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_22" style="padding-left: 2em; display: none;">
+   halt
+ </div>
+</li>
+
+<li id="23" class="odd">
+  <p>¿Cómo borro la pantalla?<a href="#23" class="button" style="margin-left: 0.8em;" id="q_23-button" onclick="showHide(&#39;q_23&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_23" style="padding-left: 2em; display: none;">
+   clear
+ </div>
+</li>
+
+<li id="24" class="even">
+  <p>¿Con qué comando puedo empaquetar y desempaquetar un conjunto de archivos o directorios?<a href="#24" class="button" style="margin-left: 0.8em;" id="q_24-button" onclick="showHide(&#39;q_24&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_24" style="padding-left: 2em; display: none;">
+   empaquetar: tar -c desempaquetar: tar -x
+ </div>
+</li>
+
+<li id="25" class="odd">
+  <p>¿Con que comando genérico de UNIX puedo comprimir y descomprimir archivos y directorios?<a href="#25" class="button" style="margin-left: 0.8em;" id="q_25-button" onclick="showHide(&#39;q_25&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_25" style="padding-left: 2em; display: none;">
+   gzip y gunzip
+ </div>
+</li>
+
+<li id="26" class="even">
+  <p>¿Cómo sé los usuarios conectados a mi máquina?<a href="#26" class="button" style="margin-left: 0.8em;" id="q_26-button" onclick="showHide(&#39;q_26&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_26" style="padding-left: 2em; display: none;">
+   who
+ </div>
+</li>
+
+<li id="27" class="odd">
+  <p>¿Cómo puedo obtener información detallada de un comando?<a href="#27" class="button" style="margin-left: 0.8em;" id="q_27-button" onclick="showHide(&#39;q_27&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_27" style="padding-left: 2em; display: none;">
+   con el man "nombrecomando"
+ </div>
+</li>
+
+<li id="28" class="even">
+  <p>¿Donde se escriben los comandos?<a href="#28" class="button" style="margin-left: 0.8em;" id="q_28-button" onclick="showHide(&#39;q_28&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_28" style="padding-left: 2em; display: none;">
+   En el promt
+ </div>
+</li>
+
+<li id="29" class="odd">
+  <p>¿Cómo un elimino archivo sin posibilidad de recuperación?<a href="#29" class="button" style="margin-left: 0.8em;" id="q_29-button" onclick="showHide(&#39;q_29&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_29" style="padding-left: 2em; display: none;">
+   con shred
+ </div>
+</li>
+
+<li id="30" class="even">
+  <p>¿Cómo creo un enlace?<a href="#30" class="button" style="margin-left: 0.8em;" id="q_30-button" onclick="showHide(&#39;q_30&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_30" style="padding-left: 2em; display: none;">
+   con ln
+ </div>
+</li>
+
+<li id="31" class="odd">
+  <p>¿Cómo borrar directorios con todos sus archivos dentro?<a href="#31" class="button" style="margin-left: 0.8em;" id="q_31-button" onclick="showHide(&#39;q_31&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_31" style="padding-left: 2em; display: none;">
+   rm -r
+ </div>
+</li>
+
+<li id="32" class="even">
+  <p>¿Cómo averiguar la cantidad de disco utilizado?<a href="#32" class="button" style="margin-left: 0.8em;" id="q_32-button" onclick="showHide(&#39;q_32&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_32" style="padding-left: 2em; display: none;">
+   du
+ </div>
+</li>
+
+<li id="33" class="odd">
+  <p>¿Cómo se le llaman a los drivers en UNIX?<a href="#33" class="button" style="margin-left: 0.8em;" id="q_33-button" onclick="showHide(&#39;q_33&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_33" style="padding-left: 2em; display: none;">
+   módulos
+ </div>
+</li>
+
+<li id="34" class="even">
+  <p>En consola, ¿cómo puedo autocompletar?<a href="#34" class="button" style="margin-left: 0.8em;" id="q_34-button" onclick="showHide(&#39;q_34&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_34" style="padding-left: 2em; display: none;">
+   Con la tecla TAB
+ </div>
+</li>
+
+<li id="35" class="odd">
+  <p>¿Cómo puedo matar un proceso?<a href="#35" class="button" style="margin-left: 0.8em;" id="q_35-button" onclick="showHide(&#39;q_35&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_35" style="padding-left: 2em; display: none;">
+   con kill
+ </div>
+</li>
+
+<li id="36" class="even">
+  <p>¿Qué es el kernel?<a href="#36" class="button" style="margin-left: 0.8em;" id="q_36-button" onclick="showHide(&#39;q_36&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_36" style="padding-left: 2em; display: none;">
+   Es el núcleo del sistema operativo
+ </div>
+</li>
+
+<li id="37" class="odd">
+  <p>¿Cómo se que versión del kernel tengo?<a href="#37" class="button" style="margin-left: 0.8em;" id="q_37-button" onclick="showHide(&#39;q_37&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_37" style="padding-left: 2em; display: none;">
+   uname -r
+ </div>
+</li>
+
+<li id="38" class="even">
+  <p>¿Cómo cargo y descargo un módulo?<a href="#38" class="button" style="margin-left: 0.8em;" id="q_38-button" onclick="showHide(&#39;q_38&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_38" style="padding-left: 2em; display: none;">
+   insmod y rmmod
+ </div>
+</li>
+
+<li id="39" class="odd">
+  <p>¿Cómo visualizo los módulos cargados?<a href="#39" class="button" style="margin-left: 0.8em;" id="q_39-button" onclick="showHide(&#39;q_39&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_39" style="padding-left: 2em; display: none;">
+   lsmod
+ </div>
+</li>
+
+<li id="40" class="even">
+  <p>¿Cómo obtengo la información sobre un módulo determinado?<a href="#40" class="button" style="margin-left: 0.8em;" id="q_40-button" onclick="showHide(&#39;q_40&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_40" style="padding-left: 2em; display: none;">
+   con modinfo
+ </div>
+</li>
+
+<li id="41" class="odd">
+  <p>¿Cómo se le llama al intérprete de comandos?<a href="#41" class="button" style="margin-left: 0.8em;" id="q_41-button" onclick="showHide(&#39;q_41&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_41" style="padding-left: 2em; display: none;">
+   bash
+ </div>
+</li>
+
+<li id="42" class="even">
+  <p>¿Cómo ver lo que hacen los usuarios que están conectados en la red?<a href="#42" class="button" style="margin-left: 0.8em;" id="q_42-button" onclick="showHide(&#39;q_42&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_42" style="padding-left: 2em; display: none;">
+   comando w
+ </div>
+</li>
+
+<li id="43" class="odd">
+  <p>¿Dónde se guardan los archivos de configuración del sistema?<a href="#43" class="button" style="margin-left: 0.8em;" id="q_43-button" onclick="showHide(&#39;q_43&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_43" style="padding-left: 2em; display: none;">
+   en /etc
+ </div>
+</li>
+
+<li id="44" class="even">
+  <p>¿Cómo diferencio entre ruta absoluta y ruta relativa?<a href="#44" class="button" style="margin-left: 0.8em;" id="q_44-button" onclick="showHide(&#39;q_44&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_44" style="padding-left: 2em; display: none;">
+   Si hay una / delante de la ruta
+ </div>
+</li>
+
+<li id="45" class="odd">
+  <p>¿Dónde se guardan los archivos de usuario?<a href="#45" class="button" style="margin-left: 0.8em;" id="q_45-button" onclick="showHide(&#39;q_45&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_45" style="padding-left: 2em; display: none;">
+   en /home
+ </div>
+</li>
+
+<li id="46" class="even">
+  <p>¿Cómo puedo ver los detalles de un archivo?<a href="#46" class="button" style="margin-left: 0.8em;" id="q_46-button" onclick="showHide(&#39;q_46&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_46" style="padding-left: 2em; display: none;">
+   con ls -i
+ </div>
+</li>
+
+<li id="47" class="odd">
+  <p>¿De qué forma puedo crear, eliminar o modificar particiones en UNIX?<a href="#47" class="button" style="margin-left: 0.8em;" id="q_47-button" onclick="showHide(&#39;q_47&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_47" style="padding-left: 2em; display: none;">
+   con fdisk
+ </div>
+</li>
+
+<li id="48" class="even">
+  <p>¿Cuántos niveles de ejecución tiene linux?<a href="#48" class="button" style="margin-left: 0.8em;" id="q_48-button" onclick="showHide(&#39;q_48&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_48" style="padding-left: 2em; display: none;">
+  El término runlevel o nivel de ejecución se refiere al modo de operación en los sistemas operativos que implementan el estilo de sistema de arranque de iniciación tipo UNIX System V.
+  <br>
+  En términos prácticos, cuando el computador entra al runlevel 0, está apagado, y cuando entra al runlevel 6, se reinicia. Los runlevels intermedios (1 a 5) difieren en relación a qué unidades de disco se montan, y qué servicios de red son iniciados. Los niveles más bajos se utilizan para el mantenimiento o la recuperación de emergencia, ya que por lo general no ofrecen ningún servicio de red. Los detalles particulares de configuración del runlevel varía bastante entre sistemas operativos, y ligeramente entre los administradores de sistema.
+  <table class="wikitable">
+    <caption><b>Los 7 niveles de ejecución (runlevels) estándars</b></caption>
+    <tbody><tr>
+      <th>Nivel de ejecución</th>
+      <th>Nombre o denominación</th>
+      <th>Descripción</th>
+    </tr>
+    <tr>
+      <td><span style="color: #06F"><b>0</b></span></td>
+      <td>Alto</td>
+      <td>Alto o cierre del sistema (Apagado).</td>
+    </tr>
+    <tr>
+      <td><span style="color: #06F"><b>1</b></span></td>
+      <td>Modo de usuario único (Monousuario)</td>
+      <td>No configura la interfaz de red o los demonios (daemons) de inicio, ni permite que ingresen otro usuario que no sea el usuario root, sin contraseña. Este nivel de ejecución permite reparar problemas, o hacer pruebas en el sistema.</td>
+    </tr>
+    <tr>
+      <td><span style="color: #06F"><b>2</b></span></td>
+      <td>Multiusuario</td>
+      <td>Multiusuario sin soporte de red.</td>
+    </tr>
+    <tr>
+      <td><span style="color: #06F"><b>3</b></span></td>
+      <td>Multiusuario con soporte de red.</td>
+      <td>Inicia el sistema normalmente.</td>
+    </tr>
+    <tr>
+      <td><span style="color: #06F"><b>4</b></span></td>
+      <td>Multiusuario con soporte de red.</td>
+      <td>Igual que el 3.</td>
+    </tr>
+    <tr>
+      <td><span style="color: #06F"><b>5</b></span></td>
+      <td>Multiusuario gráfico (X11)</td>
+      <td>Similar al <i>nivel de ejecución</i> 3 + display manager.</td>
+    </tr>
+    <tr>
+      <td><span style="color: #06F"><b>6</b></span></td>
+      <td>Reinicio</td>
+      <td>Se reinicia el sistema.</td>
+    </tr>
+  </tbody></table>
+ </div>
+</li>
+
+<li id="49" class="odd">
+  <p>¿Cómo ejecuto un proceso en 2º plano?<a href="#49" class="button" style="margin-left: 0.8em;" id="q_49-button" onclick="showHide(&#39;q_49&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_49" style="padding-left: 2em; display: none;">
+   comando &amp;
+ </div>
+</li>
+
+<li id="50" class="even">
+  <p>¿Cómo traer un proceso en 2º plano al 1º?<a href="#50" class="button" style="margin-left: 0.8em;" id="q_50-button" onclick="showHide(&#39;q_50&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_50" style="padding-left: 2em; display: none;">
+   con fg %n proceso
+ </div>
+</li>
+
+<li id="51" class="odd">
+  <p>¿Cómo puedo buscar la ubicación de un comando determinado?<a href="#51" class="button" style="margin-left: 0.8em;" id="q_51-button" onclick="showHide(&#39;q_51&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_51" style="padding-left: 2em; display: none;">
+   whereis comando
+ </div>
+</li>
+
+<li id="52" class="even">
+  <p>¿Cómo borro un directorio?<a href="#52" class="button" style="margin-left: 0.8em;" id="q_52-button" onclick="showHide(&#39;q_52&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_52" style="padding-left: 2em; display: none;">
+   con el comando rmdir
+ </div>
+</li>
+
+<li id="53" class="odd">
+  <p>¿Puede haber 2 archivos o más con la misma ruta absoluta?<a href="#53" class="button" style="margin-left: 0.8em;" id="q_53-button" onclick="showHide(&#39;q_53&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_53" style="padding-left: 2em; display: none;">
+   No
+ </div>
+</li>
+
+<li id="54" class="even">
+  <p>¿Cómo situar el cursor al principio de una línea?<a href="#54" class="button" style="margin-left: 0.8em;" id="q_54-button" onclick="showHide(&#39;q_54&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_54" style="padding-left: 2em; display: none;">
+   con ctrl + a
+ </div>
+</li>
+
+<li id="55" class="odd">
+  <p>¿Cómo visualizo la fecha y hora del sistema?<a href="#55" class="button" style="margin-left: 0.8em;" id="q_55-button" onclick="showHide(&#39;q_55&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_55" style="padding-left: 2em; display: none;">
+   comando date
+ </div>
+</li>
+
+<li id="56" class="even">
+  <p>¿Cómo puedo obtener ayuda acerca de un comando?<a href="#56" class="button" style="margin-left: 0.8em;" id="q_56-button" onclick="showHide(&#39;q_56&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_56" style="padding-left: 2em; display: none;">
+   comando --help
+ </div>
+</li>
+
+<li id="57" class="odd">
+  <p>¿Qué letra significa permiso de ejecución?<a href="#57" class="button" style="margin-left: 0.8em;" id="q_57-button" onclick="showHide(&#39;q_57&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_57" style="padding-left: 2em; display: none;">
+   x
+ </div>
+</li>
+
+<li id="58" class="even">
+  <p>¿A que se refiere cuando se dice que los entornos Unix son CASE SENSITIVE?<a href="#58" class="button" style="margin-left: 0.8em;" id="q_58-button" onclick="showHide(&#39;q_58&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_58" style="padding-left: 2em; display: none;">
+   Que distingue mayúsculas de minúsculas
+ </div>
+</li>
+
+<li id="59" class="odd">
+  <p>¿Qué significa  ./ ?<a href="#59" class="button" style="margin-left: 0.8em;" id="q_59-button" onclick="showHide(&#39;q_59&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_59" style="padding-left: 2em; display: none;">
+   directorio actual
+ </div>
+</li>
+
+<li id="60" class="even">
+  <p>¿Qué significa  ../ ?<a href="#60" class="button" style="margin-left: 0.8em;" id="q_60-button" onclick="showHide(&#39;q_60&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_60" style="padding-left: 2em; display: none;">
+   directorio anterior
+ </div>
+</li>
+
+<li id="61" class="odd">
+  <p>¿Qué significan las letras FHS?<a href="#61" class="button" style="margin-left: 0.8em;" id="q_61-button" onclick="showHide(&#39;q_61&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_61" style="padding-left: 2em; display: none;">
+   Es un standard de jerarquía de archivos, significa: File Hierarchy System
+ </div>
+</li>
+
+<li id="62" class="even">
+  <p>¿Qué es un archivo con extensión .rpm?<a href="#62" class="button" style="margin-left: 0.8em;" id="q_62-button" onclick="showHide(&#39;q_62&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_62" style="padding-left: 2em; display: none;">
+   Sistema gestor de paquetes (rpm:redhat package manager)
+ </div>
+</li>
+
+<li id="63" class="odd">
+  <p>¿Qué es una consola?<a href="#63" class="button" style="margin-left: 0.8em;" id="q_63-button" onclick="showHide(&#39;q_63&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_63" style="padding-left: 2em; display: none;">
+   Es un intérprete de comandos
+ </div>
+</li>
+
+<li id="64" class="even">
+  <p>¿Cómo puedo ver más allá de la pantalla?<a href="#64" class="button" style="margin-left: 0.8em;" id="q_64-button" onclick="showHide(&#39;q_64&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_64" style="padding-left: 2em; display: none;">
+   Shift+Av Pág, para avanzar
+   Shift+Re Pág, para retroceder
+ </div>
+</li>
+
+<li id="65" class="odd">
+  <p>¿Cómo consulto el historial de comandos?<a href="#65" class="button" style="margin-left: 0.8em;" id="q_65-button" onclick="showHide(&#39;q_65&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_65" style="padding-left: 2em; display: none;">
+   Con los cursores (flechas arriba y abajo) o comando history
+ </div>
+</li>
+
+<li id="66" class="even">
+  <p>¿Qué es pts?<a href="#66" class="button" style="margin-left: 0.8em;" id="q_66-button" onclick="showHide(&#39;q_66&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_66" style="padding-left: 2em; display: none;">
+   Es un emulador de la terminal de consola en modo gráfico
+ </div>
+</li>
+
+<li id="67" class="odd">
+  <p>¿Cómo accedo a la consola desde el modo gráfico?<a href="#67" class="button" style="margin-left: 0.8em;" id="q_67-button" onclick="showHide(&#39;q_67&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_67" style="padding-left: 2em; display: none;">
+   Ctrl+Alt+Fx (donde x será el número de la consola tty a la que se quiera acceder)
+ </div>
+</li>
+
+<li id="68" class="even">
+  <p>¿Cómo se los grupos a los que pertenezco?<a href="#68" class="button" style="margin-left: 0.8em;" id="q_68-button" onclick="showHide(&#39;q_68&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_68" style="padding-left: 2em; display: none;">
+   utilizando el comando groups
+ </div>
+</li>
+
+<li id="69" class="odd">
+  <p>¿Qué hace el comando echo?<a href="#69" class="button" style="margin-left: 0.8em;" id="q_69-button" onclick="showHide(&#39;q_69&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_69" style="padding-left: 2em; display: none;">
+   muestra los argumentos por pantalla
+ </div>
+</li>
+
+<li id="70" class="even">
+  <p>¿Cómo puedo saber en que consola me encuentro?<a href="#70" class="button" style="margin-left: 0.8em;" id="q_70-button" onclick="showHide(&#39;q_70&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_70" style="padding-left: 2em; display: none;">
+   con el comando tty
+ </div>
+</li>
+
+<li id="71" class="odd">
+  <p>¿Cómo se hace un enlace simbólico?<a href="#71" class="button" style="margin-left: 0.8em;" id="q_71-button" onclick="showHide(&#39;q_71&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_71" style="padding-left: 2em; display: none;">
+   ln -s origen nombre_enlace
+ </div>
+</li>
+
+<li id="72" class="even">
+  <p>¿Cómo hago un enlace en el directorio dir a un archivo en el directorio actual?<a href="#72" class="button" style="margin-left: 0.8em;" id="q_72-button" onclick="showHide(&#39;q_72&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_72" style="padding-left: 2em; display: none;">
+   ln -s archivo.ejemplo dir/ Si no pongo el nombre de archivo el enlace tendrá el mismo nombre 
+ </div>
+</li>
+
+<li id="73" class="odd">
+  <p>¿Cómo hago para ir al final de línea en una consola?<a href="#73" class="button" style="margin-left: 0.8em;" id="q_73-button" onclick="showHide(&#39;q_73&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_73" style="padding-left: 2em; display: none;">
+   C-e (Control y la tecla e)
+ </div>
+</li>
+
+<li id="74" class="even">
+  <p>¿Cómo hago para avanzar hacia atrás, palabra a palabra, en una consola?<a href="#74" class="button" style="margin-left: 0.8em;" id="q_74-button" onclick="showHide(&#39;q_74&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_74" style="padding-left: 2em; display: none;">
+   M-b (La tecla META en una plataforma IA32 suele ser la tecla ALT)
+ </div>
+</li>
+
+<li id="75" class="odd">
+  <p>¿Cómo hago para borrar desde el cursor hasta el final de línea?<a href="#75" class="button" style="margin-left: 0.8em;" id="q_75-button" onclick="showHide(&#39;q_75&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_75" style="padding-left: 2em; display: none;">
+   C-k
+ </div>
+</li>
+
+<li id="76" class="even">
+  <p>¿Cómo hago para borrar la palabra siguiente?<a href="#76" class="button" style="margin-left: 0.8em;" id="q_76-button" onclick="showHide(&#39;q_76&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_76" style="padding-left: 2em; display: none;">
+   M-d
+ </div>
+</li>
+
+<li id="77" class="odd">
+  <p>Si quiero setear una variable de entorno, ¿cómo hago?<a href="#77" class="button" style="margin-left: 0.8em;" id="q_77-button" onclick="showHide(&#39;q_77&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_77" style="padding-left: 2em; display: none;">
+  export VAR_NAME="VAR_VALUE"
+  </div>
+</li>
+
+<li id="78" class="even">
+  <p>¿Cómo sé cual es el nombre de la máquina en la que estoy conectado?<a href="#78" class="button" style="margin-left: 0.8em;" id="q_78-button" onclick="showHide(&#39;q_78&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_78" style="padding-left: 2em; display: none;">
+   hostname . También vale uname -n
+ </div>
+</li>
+
+<li id="79" class="odd">
+  <p>¿Cómo hago para ver las variables de entorno de mi sesión?<a href="#79" class="button" style="margin-left: 0.8em;" id="q_79-button" onclick="showHide(&#39;q_79&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_79" style="padding-left: 2em; display: none;">
+   env . Aunque también vale printenv o set (que en realidad sirve para asignar variables)
+ </div>
+</li>
+
+<li id="80" class="even">
+  <p>Puedo ejecutar un comando que no esté en mi directorio actual<a href="#80" class="button" style="margin-left: 0.8em;" id="q_80-button" onclick="showHide(&#39;q_80&#39;,&#39;+&#39;,&#39;-&#39;); return false; return false;">+</a></p>
+  <div id="q_80" style="padding-left: 2em; display: none;">
+   Sí, puedo ejecutar un comando poniendo la ruta absoluta y/o relativa. Por ejemplo /sbin/comando . También es posible ejecutar el comando si está en los directorios que contiene la variable de entorno PATH
+ </div>
+</li>
+
+<li id="81" class="odd">
+  <p>¿Cómo muestro el contenido de la variable PATH?<a href="#81" class="button" style="margin-left: 0.8em;" id="q_81-button" onclick="showHide(&#39;q_81&#39;,&#39;+&#39;,&#39;-&#39;); return false; return false;">+</a></p>
+  <div id="q_81" style="padding-left: 2em; display: none;">
+   echo $PATH . Un ejemplo típico es: /usr/local/bin:/usr/bin:/bin:/usr/bin/X11 , observa que hay varios directorios separados por el caracter delimitado ':'
+ </div>
+</li>
+
+<li id="82" class="even">
+  <p>¿Cómo hago para escribir en consola, sin parar, "Hola, soy yo"?<a href="#82" class="button" style="margin-left: 0.8em;" id="q_82-button" onclick="showHide(&#39;q_82&#39;,&#39;+&#39;,&#39;-&#39;); return false; return false;">+</a></p>
+  <div id="q_82" style="padding-left: 2em; display: none;">
+   yes "Hola, soy yo" 
+ </div>
+</li>
+
+<li id="83" class="odd">
+  <p>¿Cómo hago para copiar archivo1 a archivo2 que está en el directorio dir?<a href="#83" class="button" style="margin-left: 0.8em;" id="q_83-button" onclick="showHide(&#39;q_83&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_83" style="padding-left: 2em; display: none;">
+   cp archivo1 ./dir/
+ </div>
+</li>
+
+<li id="84" class="even">
+  <p>Quiero construir un archivo suma que tenga el contenido de A1 y A2, ¿cómo hago?<a href="#84" class="button" style="margin-left: 0.8em;" id="q_84-button" onclick="showHide(&#39;q_84&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_84" style="padding-left: 2em; display: none;">
+   cat A1 A2 &gt; suma
+ </div>
+</li>
+
+<li id="85" class="odd">
+  <p>¿Cómo sé cuantas líneas tiene un archivo?<a href="#85" class="button" style="margin-left: 0.8em;" id="q_85-button" onclick="showHide(&#39;q_85&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_85" style="padding-left: 2em; display: none;">
+   wc -l
+ </div>
+</li>
+
+<li id="86" class="even">
+  <p>Suponiendo que tengo el archivo software.tar.gz y el archivo de firma MD5 software.tar.gz.md5, ¿cómo compruebo que es correcta?<a href="#86" class="button" style="margin-left: 0.8em;" id="q_86-button" onclick="showHide(&#39;q_86&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_86" style="padding-left: 2em; display: none;">
+    md5sum -cv software.tar.gz.md5
+  </div>
+</li>
+
+<li id="87" class="odd">
+  <p>Cómo hago para extraer campos de texto de un archivo<a href="#87" class="button" style="margin-left: 0.8em;" id="q_87-button" onclick="showHide(&#39;q_87&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_87" style="padding-left: 2em; display: none;">
+   Con el comando cut . El archivo tiene líneas de texto, separadas por el caracter de salto de línea \n. Además cada línea de texto tiene los campos separados por un caracter delimitado, el estándar es ':'
+ </div>
+</li>
+
+<li id="88" class="even">
+  <p>¿Cómo redirecciono la salida estándar de error?<a href="#88" class="button" style="margin-left: 0.8em;" id="q_88-button" onclick="showHide(&#39;q_88&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_88" style="padding-left: 2em; display: none;">
+   Utilizando un 2 antes del operador de salida estandar. Por ejemplo: comando 2&gt;archivo_error
+ </div>
+</li>
+
+<li id="89" class="odd">
+  <p>¿cómo hago para cancelar la operación de un comando?<a href="#89" class="button" style="margin-left: 0.8em;" id="q_89-button" onclick="showHide(&#39;q_89&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_89" style="padding-left: 2em; display: none;">
+   C-c
+ </div>
+</li>
+
+<li id="90" class="even">
+  <p>¿Cómo hago para enviar el caracter EOF a la entrada estándar?<a href="#90" class="button" style="margin-left: 0.8em;" id="q_90-button" onclick="showHide(&#39;q_90&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_90" style="padding-left: 2em; display: none;">
+   C-d
+ </div>
+</li>
+
+<li id="91" class="odd">
+  <p>¿Puedo descomprimir un archivo ZIP Windows en Linux?<a href="#91" class="button" style="margin-left: 0.8em;" id="q_91-button" onclick="showHide(&#39;q_91&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_91" style="padding-left: 2em; display: none;">
+   Sí, con el comando unzip. Este comando no está instalado de forma estándar. También existe el comando unrar para descomprimir el formato RAR
+ </div>
+</li>
+
+<li id="92" class="even">
+  <p>¿Cómo hago para saber el tiempo que tarda en ejecutarse un comando?<a href="#92" class="button" style="margin-left: 0.8em;" id="q_92-button" onclick="showHide(&#39;q_92&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_92" style="padding-left: 2em; display: none;">
+   time comando
+ </div>
+</li>
+
+<li id="93" class="odd">
+  <p>Si quiero crear el directorio dir11 dentro de dir1, y dir1 no existe, ¿cómo lo hago con una sola instrucción?<a href="#93" class="button" style="margin-left: 0.8em;" id="q_93-button" onclick="showHide(&#39;q_93&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_93" style="padding-left: 2em; display: none;">
+   mkdir -p dir1/dir11 . Es la opción p del comando mkdir
+ </div>
+</li>
+
+<li id="94" class="even">
+  <p>¿Cómo hago para encontrar si hay un usuario que se llame pepe?<a href="#94" class="button" style="margin-left: 0.8em;" id="q_94-button" onclick="showHide(&#39;q_94&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_94" style="padding-left: 2em; display: none;">
+   grep pepe /etc/passwd
+ </div>
+</li>
+
+<li id="95" class="odd">
+  <p>¿Cómo mostrar todas las líneas de un archivo de texto que NO contengan la palabra hola?<a href="#95" class="button" style="margin-left: 0.8em;" id="q_95-button" onclick="showHide(&#39;q_95&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_95" style="padding-left: 2em; display: none;">
+   grep -v hola archivo.txt
+ </div>
+</li>
+
+<li id="96" class="even">
+  <p>¿Cómo hago para ver qué usuarios no tienen una shell asignada?<a href="#96" class="button" style="margin-left: 0.8em;" id="q_96-button" onclick="showHide(&#39;q_96&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_96" style="padding-left: 2em; display: none;">
+   grep ":$" /etc/passwd . $ es el caracter especial de las expresiones regulares para el fin de línea, por lo tanto el patrón coincide con las líneas que terminan en : , es decir que no tienen una shell asignada
+ </div>
+</li>
+
+<li id="97" class="odd">
+  <p>¿Como encuentro los archivos terminados en .txt en mi directorio actual?<a href="#97" class="button" style="margin-left: 0.8em;" id="q_97-button" onclick="showHide(&#39;q_97&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_97" style="padding-left: 2em; display: none;">
+   ls *.txt o también find ./ -name .txt
+ </div>
+</li>
+
+<li id="98" class="even">
+  <p>Quiero ver el contenido de los archivos de texto que empiecen por a, seguidos de un 3 o un 4, y terminados en .sh, ¿como hago?<a href="#98" class="button" style="margin-left: 0.8em;" id="q_98-button" onclick="showHide(&#39;q_98&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_98" style="padding-left: 2em; display: none;">
+   cat a[23]*.sh
+ </div>
+</li>
+
+<li id="99" class="odd">
+  <p>Estoy perdido en el árbol de directorios, ¿cómo vuelvo a mi HOME?<a href="#99" class="button" style="margin-left: 0.8em;" id="q_99-button" onclick="showHide(&#39;q_99&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_99" style="padding-left: 2em; display: none;">
+   cd o también cd ~ . El home está en la variable de entorno HOME, o en el caracter ~ 
+ </div>
+</li>
+
+<li id="100" class="even">
+  <p>Quiero ver cuanto espacio ocupa mi home, ¿cómo hago?<a href="./Aprendiendo Linux (100 Ejercicios)_files/Aprendiendo Linux (100 Ejercicios).html" class="button" style="margin-left: 0.8em;" id="q_100-button" onclick="showHide(&#39;q_100&#39;,&#39;+&#39;,&#39;-&#39;); return false;">+</a></p>
+  <div id="q_100" style="padding-left: 2em; display: none;">
+   du -sh ~ 
+ </div>
+</li>
+
+</ol>
+
+
+</div>
+</div>
+</div>
+
+</div>
+</div> <!-- /content-wrapper -->
+
+
+<div id="footer">
+  <div class="block-marker">footer</div>
+  <div id="footer-links">
+
+    <p>© 2007-2015 <a href="https://plus.google.com/+Ces%C3%A1reoGarc%C3%ADaRodicio" rel="publisher"></a>
+      <span id="system-name">cesareox.com</span>
+      - 
+      <a href="https://www.cesareox.com/info_contacto/contactar">Contactar
+
+      </p>
+    </div>
+  </div> <!-- /footer -->
+</div> <!-- /wrapper -->
+</body>
+</html>
